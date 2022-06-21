@@ -143,9 +143,6 @@ public class DAO extends Complaint{
 	          ResultSet rs = stmt.executeQuery( "SELECT * FROM dbcomplaint.db;" );
 	          while ( rs.next() ) {
 	             int id = rs.getInt("id");
-	             String  name = rs.getString("name");
-	             String  message = rs.getString("message");
-	             String date_added = rs.getString("date_added");
 	             System.out.println( "ID : " + id );
 	             System.out.println( "Descrição : " +  getDescricaoQueixa());
 	             System.out.println();

@@ -34,7 +34,7 @@ public class Controller extends HttpServlet {
 		String action = request.getServletPath();
 		if (action.equals("/main")) {
 			fazerReclamacao(request, response);
-			response.sendRedirect("novaReclacao.html");
+			response.sendRedirect("novaReclacao.jsp");
 		} else if (action.equals("/main0")) {
 			inserirReclamacaoAnimal(request, response);
 		} else if (action.equals("/main1")) {
